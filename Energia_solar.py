@@ -17,7 +17,7 @@ st.image("panel solar.png", caption="Generación de energía solar")
 # Sidebar (entrada del usuario)
 st.sidebar.header("Parámetros solares")
 
-radiacion = st.sidebar.slider("Intensidad de radiación solar (W/m²)", 0.0, 1200.0, 600.0)
+radiacion = st.sidebar.slider("Intensidad de radiación solar (W/m²)", 200.0, 1050.0, 620.0)
 
 # Cargar datos
 df = pd.read_csv('solar_ODS7.csv')
@@ -43,9 +43,9 @@ st.subheader('Energía generada')
 st.write(f'La planta fotovoltaica produciría aproximadamente: {prediccion:.2f} kWh')
 
 # Interpretación simple
-if prediccion < 150:
+if prediccion < 45:
     st.warning("Producción baja")
-elif prediccion < 300:
+elif prediccion < 80:
     st.info("Producción moderada")
 else:
     st.success("Alta producción de energía")
