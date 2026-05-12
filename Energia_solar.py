@@ -8,8 +8,8 @@ import pandas as pd
 st.write(''' # ODS 7: Energía Asequible y No Contaminante ''')
 
 st.markdown("""
-Esta aplicación utiliza **Machine Learning** para predecir la energía generada por una turbina eólica
-en función de la velocidad del viento.
+Esta aplicación utiliza **Machine Learning** para predecir la energía generada por una planta fotovoltaica
+en función de la intensidad de la radiación solar.
 """)
 
 st.image("panel solar.png", caption="Generación de energía solar")
